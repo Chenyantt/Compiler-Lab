@@ -1,0 +1,151 @@
+FUNCTION squaRever :
+PARAM num
+t1 := #0
+flag := t1
+DEC array 12
+t2 := #0
+j := t2
+t4 := #0
+t5 := #0
+t5 := t5 * #3
+t5 := t5 + t4
+t6 := t5 * #4
+t3 := &array + t6
+t8 := num
+t9 := #100
+t7 := t8 / t9
+*t3 := t7
+t11 := #1
+t12 := #0
+t12 := t12 * #3
+t12 := t12 + t11
+t13 := t12 * #4
+t10 := &array + t13
+t17 := num
+t18 := #10
+t15 := t17 / t18
+t19 := #10
+t22 := #0
+t23 := #0
+t23 := t23 * #3
+t23 := t23 + t22
+t24 := t23 * #4
+t21 := &array + t24
+t20 := *t21
+t16 := t19 * t20
+t14 := t15 - t16
+*t10 := t14
+t26 := #2
+t27 := #0
+t27 := t27 * #3
+t27 := t27 + t26
+t28 := t27 * #4
+t25 := &array + t28
+t32 := num
+t34 := #100
+t37 := #0
+t38 := #0
+t38 := t38 * #3
+t38 := t38 + t37
+t39 := t38 * #4
+t36 := &array + t39
+t35 := *t36
+t33 := t34 * t35
+t30 := t32 - t33
+t40 := #10
+t43 := #1
+t44 := #0
+t44 := t44 * #3
+t44 := t44 + t43
+t45 := t44 * #4
+t42 := &array + t45
+t41 := *t42
+t31 := t40 * t41
+t29 := t30 - t31
+*t25 := t29
+t49 := #0
+t50 := #0
+t50 := t50 * #3
+t50 := t50 + t49
+t51 := t50 * #4
+t48 := &array + t51
+t46 := *t48
+t53 := #2
+t54 := #0
+t54 := t54 * #3
+t54 := t54 + t53
+t55 := t54 * #4
+t52 := &array + t55
+t47 := *t52
+IF t46 != t47 GOTO label1
+GOTO label2
+LABEL label1 :
+t56 := #0
+flag := t56
+GOTO label3
+LABEL label2 :
+LABEL label4 :
+t57 := j
+t58 := #12
+IF t57 < t58 GOTO label5
+GOTO label6
+LABEL label5 :
+t63 := j
+t64 := j
+t61 := t63 * t64
+t62 := num
+t59 := t61 - t62
+t60 := #0
+IF t59 == t60 GOTO label7
+GOTO label8
+LABEL label7 :
+t65 := #1
+flag := t65
+LABEL label8 :
+t67 := j
+t68 := #1
+t66 := t67 + t68
+j := t66
+GOTO label4
+LABEL label6 :
+LABEL label3 :
+t69 := flag
+t70 := #1
+IF t69 == t70 GOTO label9
+GOTO label10
+LABEL label9 :
+t71 := #1
+RETURN t71
+GOTO label11
+LABEL label10 :
+t72 := #0
+RETURN t72
+LABEL label11 :
+FUNCTION main :
+t73 := #100
+i := t73
+LABEL label12 :
+t74 := i
+t75 := #150
+IF t74 < t75 GOTO label13
+GOTO label14
+LABEL label13 :
+t78 := i
+ARG t78
+t76 := CALL squaRever
+t77 := #1
+IF t76 == t77 GOTO label15
+GOTO label16
+LABEL label15 :
+t79 := i
+WRITE t79
+(null) := #0
+LABEL label16 :
+t81 := i
+t82 := #1
+t80 := t81 + t82
+i := t80
+GOTO label12
+LABEL label14 :
+t83 := #0
+RETURN t83
